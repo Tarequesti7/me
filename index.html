@@ -123,99 +123,88 @@
       </div>
     </div>
   </footer>
-  <style>
-    #footer {
-      background-color: black;
-      color: white;
-    }
-    /* Background Section Styling */
-#bg2 {
-  position: relative;
-  width: 100%;
-  height: 100vh; /* Full viewport height */
-  background: url('assets/img/your-background.jpg') no-repeat center center/cover; /* Background remains untouched */
-  overflow: hidden;
-}
 
-/* Floating Image */
-.floating-image {
-  position: absolute;
-  top: 50%; /* Vertically center */
-  left: 0; /* Align to the left */
-  transform: translate(0, -50%); /* Correct centering offset */
-  width: 300px; /* Adjust width of the image */
-  height: auto; /* Maintain aspect ratio */
-  z-index: 10; /* Place the image above the background */
-}
-
-/* Content Styling */
-.content {
-  position: absolute;
-  top: 50%;
-  right: 5%; /* Space content from the right */
-  transform: translateY(-50%);
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  text-align: right;
-}
-
-.content h2 {
-  margin: 15px 0;
-  font-size: 1.5rem;
-}
-
-.content a {
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.content a:hover {
-  color: #00ffb3;
-}
-
+  
+ <style>
+  /* Footer Styling */
+  #footer {
+    background-color: black;
+    color: white;
   }
 
+  /* Background Section */
+  #bg2 {
+    background: url('assets/img/your-background.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  /* Floating Image */
+  .floating-image {
+    position: absolute;
+    top: 50%; /* Vertically center */
+    left: 0; /* Align to the left */
+    transform: translate(0, -50%); /* Correct centering offset */
+    width: 300px; /* Adjust width of the image */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 10; /* Place the image above the background */
+  }
+
+  /* Content Styling */
+  .content {
+    position: absolute;
+    top: 50%;
+    right: 5%; /* Space content from the right */
+    transform: translateY(-50%);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+
+  .content h2 {
+    margin: 10px 0;
+    font-size: 1.7rem;
+  }
+
+  .content a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .content a:hover {
+    color: #00ffb3;
+  }
+
+  /* Container within Background Section */
   #bg2 .container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.6); /* Optional: Add slight background for readability */
-  padding: 20px;
-  border-radius: 10px;
-}
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6); /* Optional: Add slight background for readability */
+    padding: 20px;
+    border-radius: 10px;
+  }
 
-.img-fluid {
-  width: 150px; /* Adjust as needed */
-  height: auto;
-  border-radius: 50%; /* Makes it a circular image */
-}
+  /* Fluid (Circular) Image */
+  .img-fluid {
+    width: 150px; /* Adjust as needed */
+    height: auto;
+    border-radius: 50%; /* Makes it a circular image */
+  }
+</style>
 
-.content h2 {
-  margin: 10px 0;
-  font-size: 1.7rem;
-  font-weight: bold;
-}
-
-.content a {
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.content a:hover {
-  color: #00ffb3;
-}
-
-    
-
-  </style>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

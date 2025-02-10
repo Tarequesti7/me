@@ -83,17 +83,19 @@
 
     </section><!-- /Hero Section -->
 
-  <section id="bg2" class="bg2 section">
-  <!-- Add the image -->
-  <img src="assets/img/profile1.jpg" alt="Image Description" class="floating-image">
-  
-  <!-- Content -->
-  <div class="content">
-    <h2><a href="about.html">ABOUT</a></h2>
-    <h2><a href="resume.html">RESUME</a></h2>
-    <h2><a href="services.html">SKILLS</a></h2>
-    <h2><a href="portfolio.html">PROJECTS</a></h2>
-    <h2><a href="contact.html">CONTACT</a></h2>
+ <section id="bg2" class="bg2 section">
+  <div class="bg2-container">
+    <!-- Add the image -->
+    <img src="assets/img/profile1.jpg" alt="Image Description" class="floating-image">
+    
+    <!-- Content -->
+    <div class="content">
+      <h2><a href="about.html">ABOUT</a></h2>
+      <h2><a href="resume.html">RESUME</a></h2>
+      <h2><a href="services.html">SKILLS</a></h2>
+      <h2><a href="portfolio.html">PROJECTS</a></h2>
+      <h2><a href="contact.html">CONTACT</a></h2>
+    </div>
   </div>
 </section>
 
@@ -132,8 +134,8 @@
     color: white;
   }
 
-  /* Background Section */
-  #bg2 {
+ /* Background Section */
+#bg2 {
     background: url('assets/img/your-background.jpg') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
@@ -142,69 +144,48 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    text-align: left; /* Align the text to the left */
-  }
+}
 
-  /* Floating Image */
-  .floating-image {
-    position: absolute;
-    top: 50%; /* Vertically center */
-    left: 0; /* Align to the left */
-    transform: translateY(-50%); /* Correct centering offset */
-    width: 300px; /* Adjust width of the image */
-    height: auto; /* Maintain aspect ratio */
-    z-index: 10; /* Place the image above the background */
-  }
-
-  /* Content Styling */
-  .content {
-    position: absolute;
-    top: 50%;
-    right: 5%; /* Space content from the right */
-    transform: translateY(-50%);
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    z-index: 5; /* Make sure it stays above the background but below the floating image */
-  }
-
-  .content h2 {
-    margin: 10px 0;
-    font-size: 1.7rem;
-  }
-
-  .content a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-
-  .content a:hover {
-    color: #00ffb3;
-  }
-
-  /* Container within Background Section */
-  #bg2 .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/* Wrapper for Image and Content */
+.bg2-container {
     display: flex;
     align-items: center;
-    background: rgba(0, 0, 0, 0.6); /* Optional: Add slight background for readability */
-    padding: 20px;
-    border-radius: 10px;
-  }
+    justify-content: center;
+    max-width: 80%;
+    width: 100%;
+}
 
-  /* Fluid (Circular) Image */
-  .img-fluid {
-    width: 150px; /* Adjust as needed */
+/* Floating Image */
+.floating-image {
+    max-width: 250px; /* Adjust image size */
     height: auto;
-    border-radius: 50%; /* Makes it a circular image */
-  }
+    margin-right: 30px; /* Space between image and text */
+}
+
+/* Content */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.content h2 {
+    margin: 10px 0;
+}
+
+.content a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: color 0.3s ease-in-out;
+}
+
+.content a:hover {
+    color: yellow;
+}
+
 
 </style>
 

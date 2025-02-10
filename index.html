@@ -142,6 +142,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    text-align: left; /* Align the text to the left */
   }
 
   /* Floating Image */
@@ -149,7 +150,7 @@
     position: absolute;
     top: 50%; /* Vertically center */
     left: 0; /* Align to the left */
-    transform: translate(0, -50%); /* Correct centering offset */
+    transform: translateY(-50%); /* Correct centering offset */
     width: 300px; /* Adjust width of the image */
     height: auto; /* Maintain aspect ratio */
     z-index: 10; /* Place the image above the background */
@@ -167,6 +168,7 @@
     display: flex;
     flex-direction: column;
     text-align: right;
+    z-index: 5; /* Make sure it stays above the background but below the floating image */
   }
 
   .content h2 {
@@ -203,6 +205,7 @@
     height: auto;
     border-radius: 50%; /* Makes it a circular image */
   }
+
 </style>
 
 

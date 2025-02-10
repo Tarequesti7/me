@@ -83,8 +83,15 @@
 
     </section><!-- /Hero Section -->
 
- <section id="bg2" class="bg2 section">
-  <div class="bg2-container">
+ <section id="bg" class="bg section" style="background-image: url('assets/img/bg.jpg'); 
+                                              background-size: cover; 
+                                              background-position: center; 
+                                              background-repeat: no-repeat; 
+                                              height: 100vh; 
+                                              display: flex; 
+                                              align-items: center; 
+                                              justify-content: center;">
+  <div class="bg-container">
     <!-- Add the image -->
     <img src="assets/img/profile1.jpg" alt="Image Description" class="floating-image">
     
@@ -98,6 +105,7 @@
     </div>
   </div>
 </section>
+
 
     
   </main>
@@ -134,20 +142,10 @@
     color: white;
   }
 
- /* Background Section */
-#bg2 {
-    background: url('assets/img/bg2.jpg') no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
+
 
 /* Wrapper for Image and Content */
-.bg2-container {
+.bg-container {
     display: flex;
     align-items: center;
     justify-content: center;

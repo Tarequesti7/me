@@ -84,16 +84,21 @@
     </section><!-- /Hero Section -->
 
     <section id="bg2" class="bg2 section">
-      <img src="assets/img/bg2.jpg" alt=" " data-aos="fade-in">
-            <img src="assets/img/profile.jpg" class="img-fluid" alt="">
-      <div class="content">
-        <h2><a href="about.html">ABOUT</a></h2>
-        <h2><a href="resume.html">RESUME</a></h2>
-        <h2><a href="services.html">SKILLS</a></h2>
-        <h2><a href="portfolio.html">PROJECTS</a></h2>
-        <h2><a href="contact.html">CONTACT</a></h2>
-      </div>
-    </section>
+  <img src="assets/img/bg2.jpg" alt=" " data-aos="fade-in"> 
+  
+  <div class="container d-flex align-items-center"> 
+    <img src="assets/img/profile1.jpg" class="img-fluid me-4" alt="">
+    
+    <div class="content">
+      <h2><a href="about.html">ABOUT</a></h2>
+      <h2><a href="resume.html">RESUME</a></h2>
+      <h2><a href="services.html">SKILLS</a></h2>
+      <h2><a href="portfolio.html">PROJECTS</a></h2>
+      <h2><a href="contact.html">CONTACT</a></h2>
+    </div>
+  </div>
+</section>
+
     
   </main>
 
@@ -166,6 +171,39 @@
     color: #00ffb3; /* Hover effect */
   }
 
+  #bg2 .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6); /* Optional: Add slight background for readability */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.img-fluid {
+  width: 150px; /* Adjust as needed */
+  height: auto;
+  border-radius: 50%; /* Makes it a circular image */
+}
+
+.content h2 {
+  margin: 10px 0;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.content a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.content a:hover {
+  color: #00ffb3;
+}
 
 
   </style>
